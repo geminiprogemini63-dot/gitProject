@@ -1,0 +1,401 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>L'Artisan — Neapolitan Pizza Artistry</title>
+  <meta name="description" content="L'Artisan della Pizza — Experience the art of the Neapolitan soul. Premium hand-crafted pizzas with 48-hour fermented dough. Reserve your table today." />
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <!-- ============================================================
+       HEADER
+       ============================================================ -->
+  <header class="site-header" id="site-header">
+    <nav class="container header-inner">
+      <!-- Logo -->
+      <a href="#" class="logo" id="logo">L'Artisan</a>
+
+      <!-- Desktop Navigation -->
+      <div class="nav-links" id="nav-links">
+        <a href="#menu">Menu</a>
+        <a href="#story">Our Story</a>
+        <a href="#reservations">Reservations</a>
+      </div>
+
+      <!-- Order Now CTA -->
+      <button class="btn-order" id="btn-order-now">Order Now</button>
+
+      <!-- Mobile Menu Toggle -->
+      <button class="mobile-toggle" id="mobile-toggle" aria-label="Toggle mobile menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </nav>
+  </header>
+
+  <!-- Mobile Navigation Overlay -->
+  <div class="mobile-nav" id="mobile-nav">
+    <a href="#menu">Menu</a>
+    <a href="#story">Our Story</a>
+    <a href="#reservations">Reservations</a>
+    <a href="#" class="btn-order" style="margin-top: 1rem;">Order Now</a>
+  </div>
+
+  <!-- ============================================================
+       HERO SECTION
+       ============================================================ -->
+  <section class="hero" id="hero">
+    <img
+      src="assets/images/hero-bg.png"
+      alt="Artisan pizza dough being hand-crafted in a traditional pizzeria"
+      class="hero-bg"
+      id="hero-bg"
+      loading="eager"
+    />
+    <div class="hero-overlay"></div>
+    <div class="hero-content">
+      <h1 class="hero-title">The Art of the<br />Neapolitan Soul</h1>
+      <p class="hero-subtitle">Experience the culmination of tradition and passion in every bite.</p>
+      <a href="#menu" class="btn-explore" id="btn-explore-menu">Explore the Menu</a>
+    </div>
+  </section>
+
+  <!-- ============================================================
+       OUR STORY SECTION
+       ============================================================ -->
+  <section class="story-section" id="story">
+    <div class="container">
+      <div class="story-grid">
+        <!-- Story Image -->
+        <div class="story-image-wrapper reveal-left">
+          <img
+            src="assets/images/pizza-oven.png"
+            alt="Traditional Neapolitan wood-fired pizza oven"
+            class="story-image"
+            loading="lazy"
+          />
+        </div>
+
+        <!-- Story Content -->
+        <div class="story-content reveal-right">
+          <span class="story-label">Our Story</span>
+          <h2 class="story-title">The 48-Hour Promise</h2>
+          <p class="story-text">
+            At L'Artisan, we believe that true artistry takes time. Our dough is fermented for a full 48 hours, allowing flavors to deepen and textures to perfect. It's this slow, careful process that defines the soulful character of our pizzas. Every element is sourced with reverence for Italian tradition and modern refinement.
+          </p>
+          <div class="story-divider"></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================================
+       FEATURED PIZZAS SECTION
+       ============================================================ -->
+  <section class="featured-section" id="featured">
+    <div class="container">
+      <div class="featured-grid">
+        <!-- Pizza Card: Margherita -->
+        <div class="pizza-card reveal-scale stagger-1" id="card-margherita">
+          <img
+            src="assets/images/pizza-margherita.png"
+            alt="The Margherita — Classic Neapolitan pizza"
+            class="pizza-card-image"
+            loading="lazy"
+          />
+          <h3 class="pizza-card-name">The Margherita</h3>
+          <p class="pizza-card-desc">San Marzano, Mozzarella di Bufala, Fresh Basil</p>
+          <span class="pizza-card-price">€18</span>
+        </div>
+
+        <!-- Pizza Card: Tartufo Nero -->
+        <div class="pizza-card reveal-scale stagger-2" id="card-tartufo">
+          <img
+            src="assets/images/pizza-tartufo.png"
+            alt="The Tartufo Nero — Truffle gourmet pizza"
+            class="pizza-card-image"
+            loading="lazy"
+          />
+          <h3 class="pizza-card-name">The Tartufo Nero</h3>
+          <p class="pizza-card-desc">Truffle Cream, Wild Mushrooms, Black Truffle</p>
+          <span class="pizza-card-price">€24</span>
+        </div>
+
+        <!-- Pizza Card: Diavola -->
+        <div class="pizza-card reveal-scale stagger-3" id="card-diavola">
+          <img
+            src="assets/images/pizza-diavola.png"
+            alt="The Diavola — Spicy artisan pizza"
+            class="pizza-card-image"
+            loading="lazy"
+          />
+          <h3 class="pizza-card-name">The Diavola</h3>
+          <p class="pizza-card-desc">Spicy Nduja, Salame Piccante, Smoked Provola</p>
+          <span class="pizza-card-price">€22</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================================
+       FULL MENU SECTION
+       ============================================================ -->
+  <section class="menu-section" id="menu">
+    <div class="container">
+      <h2 class="menu-heading reveal">Our Menu</h2>
+
+      <div class="menu-grid">
+        <!-- Classics Column -->
+        <div class="reveal stagger-1">
+          <h3 class="menu-category-title">Classics</h3>
+          <ul class="menu-items">
+            <li class="menu-item">
+              <div class="menu-item-info">
+                <h4 class="menu-item-name">Margherita —</h4>
+                <p class="menu-item-desc">San Marzano, Mozzarella di Bufala, Basil</p>
+              </div>
+              <span class="menu-item-price">€18</span>
+            </li>
+            <li class="menu-item">
+              <div class="menu-item-info">
+                <h4 class="menu-item-name">Marinara —</h4>
+                <p class="menu-item-desc">San Marzano, Garlic, Oregano</p>
+              </div>
+              <span class="menu-item-price">€16</span>
+            </li>
+            <li class="menu-item">
+              <div class="menu-item-info">
+                <h4 class="menu-item-name">Napoletana —</h4>
+                <p class="menu-item-desc">San Marzano, Anchovies, Capers, Olives</p>
+              </div>
+              <span class="menu-item-price">€19</span>
+            </li>
+          </ul>
+        </div>
+
+        <!-- Gourmet Column -->
+        <div class="reveal stagger-2">
+          <h3 class="menu-category-title">Gourmet</h3>
+          <ul class="menu-items">
+            <li class="menu-item">
+              <div class="menu-item-info">
+                <h4 class="menu-item-name">Tartufo Nero —</h4>
+                <p class="menu-item-desc">Wild Mushrooms, Black Truffle</p>
+              </div>
+              <span class="menu-item-price">€24</span>
+            </li>
+            <li class="menu-item">
+              <div class="menu-item-info">
+                <h4 class="menu-item-name">Prosciutto e Fichi —</h4>
+                <p class="menu-item-desc">Fior di Latte, Prosciutto di Parma, Fig Jam, Arugula</p>
+              </div>
+              <span class="menu-item-price">€26</span>
+            </li>
+            <li class="menu-item">
+              <div class="menu-item-info">
+                <h4 class="menu-item-name">Capesante —</h4>
+                <p class="menu-item-desc">Scallops, Asparagus, Lemon Zest, Mozzarella</p>
+              </div>
+              <span class="menu-item-price">€28</span>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================================
+       RESERVATION SECTION
+       ============================================================ -->
+  <section class="reservation-section" id="reservations">
+    <div class="container">
+      <h2 class="reservation-heading reveal">Reserve Your Table</h2>
+
+      <form class="reservation-form reveal stagger-1" id="booking-form" onsubmit="handleBooking(event)">
+        <div class="form-row">
+          <!-- Date Input -->
+          <input
+            type="text"
+            class="form-input"
+            id="input-date"
+            placeholder="Date"
+            onfocus="(this.type='date')"
+            onblur="if(!this.value)(this.type='text')"
+            required
+          />
+
+          <!-- Guests Select -->
+          <div class="select-wrapper">
+            <select class="form-select" id="select-guests" required>
+              <option value="" disabled selected>Guests</option>
+              <option value="1">1 Person</option>
+              <option value="2">2 People</option>
+              <option value="4">4 People</option>
+              <option value="6+">6+ People</option>
+            </select>
+          </div>
+
+          <!-- Time Select -->
+          <div class="select-wrapper">
+            <select class="form-select" id="select-time" required>
+              <option value="" disabled selected>Time</option>
+              <option value="18:00">18:00</option>
+              <option value="19:00">19:00</option>
+              <option value="20:00">20:00</option>
+              <option value="21:00">21:00</option>
+            </select>
+          </div>
+        </div>
+
+        <button type="submit" class="btn-book" id="btn-book-now">Book Now</button>
+      </form>
+    </div>
+  </section>
+
+  <!-- ============================================================
+       FOOTER
+       ============================================================ -->
+  <footer class="site-footer" id="footer">
+    <div class="container">
+      <!-- Social Icons -->
+      <div class="footer-socials">
+        <!-- Instagram -->
+        <a href="#" aria-label="Follow us on Instagram" id="social-instagram">
+          <svg viewBox="0 0 24 24"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12s.014 3.668.072 4.948c.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24s3.668-.014 4.948-.072c4.354-.2 6.782-2.618 6.979-6.98C23.986 15.668 24 15.259 24 12s-.014-3.667-.072-4.947c-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16a4 4 0 110-8 4 4 0 010 8zm6.406-11.845a1.44 1.44 0 100 2.881 1.44 1.44 0 000-2.881z"/></svg>
+        </a>
+        <!-- Facebook -->
+        <a href="#" aria-label="Follow us on Facebook" id="social-facebook">
+          <svg viewBox="0 0 24 24"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.469h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.469h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg>
+        </a>
+        <!-- Twitter / X -->
+        <a href="#" aria-label="Follow us on Twitter" id="social-twitter">
+          <svg viewBox="0 0 24 24"><path d="M23.953 4.57a10 10 0 01-2.825.775 4.958 4.958 0 002.163-2.723c-.951.555-2.005.959-3.127 1.184a4.92 4.92 0 00-8.384 4.482C7.69 8.095 4.067 6.13 1.64 3.162a4.822 4.822 0 00-.666 2.475c0 1.71.87 3.213 2.188 4.096a4.904 4.904 0 01-2.228-.616v.06a4.923 4.923 0 003.946 4.84 4.996 4.996 0 01-2.212.085 4.936 4.936 0 004.604 3.417 9.867 9.867 0 01-6.102 2.105c-.39 0-.779-.023-1.17-.067a13.995 13.995 0 007.557 2.209c9.053 0 13.998-7.496 13.998-13.985 0-.21 0-.42-.015-.63A9.935 9.935 0 0024 4.59z"/></svg>
+        </a>
+      </div>
+
+      <!-- Footer Info -->
+      <div class="footer-info">
+        <p>L'Artisan della Pizza &copy; 2024, 123 Via Napoli, Rome, Italy.</p>
+        <p>+39 06 1234 5678. <a href="mailto:ciao@lartisan.it">Contact Us.</a></p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ============================================================
+       JAVASCRIPT
+       ============================================================ -->
+  <script>
+    // ---- Header Scroll Effect ----
+    const header = document.getElementById('site-header');
+    let lastScroll = 0;
+
+    window.addEventListener('scroll', () => {
+      const currentScroll = window.pageYOffset;
+      if (currentScroll > 60) {
+        header.classList.add('scrolled');
+      } else {
+        header.classList.remove('scrolled');
+      }
+      lastScroll = currentScroll;
+    }, { passive: true });
+
+    // ---- Mobile Menu Toggle ----
+    const mobileToggle = document.getElementById('mobile-toggle');
+    const mobileNav = document.getElementById('mobile-nav');
+
+    mobileToggle.addEventListener('click', () => {
+      mobileToggle.classList.toggle('active');
+      mobileNav.classList.toggle('open');
+      document.body.style.overflow = mobileNav.classList.contains('open') ? 'hidden' : '';
+    });
+
+    // Close mobile nav when a link is clicked
+    mobileNav.querySelectorAll('a').forEach(link => {
+      link.addEventListener('click', () => {
+        mobileToggle.classList.remove('active');
+        mobileNav.classList.remove('open');
+        document.body.style.overflow = '';
+      });
+    });
+
+    // ---- Scroll Reveal Animations (Intersection Observer) ----
+    const revealElements = document.querySelectorAll('.reveal, .reveal-left, .reveal-right, .reveal-scale');
+
+    const revealObserver = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('visible');
+          revealObserver.unobserve(entry.target);
+        }
+      });
+    }, {
+      threshold: 0.15,
+      rootMargin: '0px 0px -50px 0px'
+    });
+
+    revealElements.forEach(el => revealObserver.observe(el));
+
+    // ---- Smooth Scroll for Anchor Links ----
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+      anchor.addEventListener('click', function (e) {
+        const href = this.getAttribute('href');
+        if (href === '#') return;
+        e.preventDefault();
+        const target = document.querySelector(href);
+        if (target) {
+          const headerHeight = header.offsetHeight;
+          const targetPosition = target.getBoundingClientRect().top + window.pageYOffset - headerHeight;
+          window.scrollTo({
+            top: targetPosition,
+            behavior: 'smooth'
+          });
+        }
+      });
+    });
+
+    // ---- Booking Form Handler ----
+    function handleBooking(e) {
+      e.preventDefault();
+      const date = document.getElementById('input-date').value;
+      const guests = document.getElementById('select-guests').value;
+      const time = document.getElementById('select-time').value;
+
+      const btn = document.getElementById('btn-book-now');
+      const originalText = btn.textContent;
+      btn.textContent = '✓ Reserved!';
+      btn.style.background = '#2D7A4F';
+      btn.style.color = '#fff';
+
+      setTimeout(() => {
+        btn.textContent = originalText;
+        btn.style.background = '';
+        btn.style.color = '';
+        e.target.reset();
+      }, 2500);
+    }
+
+    // ---- Parallax-lite Hero Background ----
+    window.addEventListener('scroll', () => {
+      const hero = document.getElementById('hero');
+      const heroBg = document.getElementById('hero-bg');
+      if (!hero || !heroBg) return;
+      const scrolled = window.pageYOffset;
+      const heroHeight = hero.offsetHeight;
+      if (scrolled <= heroHeight) {
+        heroBg.style.transform = `translateY(${scrolled * 0.25}px)`;
+      }
+    }, { passive: true });
+  </script>
+
+</body>
+</html>
